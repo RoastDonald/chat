@@ -1,0 +1,21 @@
+$mainColor: darken(#282c34, 3%);
+
+.input-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.input-panel__input {
+  color: lighten($color: $mainColor, $amount: 50%);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: $mainColor;
+}
+
+.ant-input:focus {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}

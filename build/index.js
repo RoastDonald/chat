@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var server_1 = require("./server");
+var database_1 = require("./config/database");
+var mongo = new database_1.MongoDB();
+var redis = new database_1.Redis();
+var app = new server_1.App();
+mongo.connect();
+redis.connect();
+app.start();
